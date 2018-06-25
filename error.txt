@@ -1,0 +1,6 @@
+1.poocfg.setMaxIdel(50);
+报错:
+The type org.apache.commons.pool2.impl.GenericObjectPoolConfig cannot be resolved. It is indirectly referenced from required .class files
+解决：
+http://commons.apache.org/proper/commons-pool/download_pool.cgi 
+下载"commons-pool2-2.5.0-bin.zip" 包导入项目中
