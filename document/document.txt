@@ -5,8 +5,9 @@ https://jingyan.baidu.com/article/48206aeaf10636216bd6b35f.html  打开计算机
 https://jingyan.baidu.com/article/f96699bbaa8fc1894f3c1b5a.html  删除MySql
 https://blog.csdn.net/whbing1471/article/details/52066688  解决每次推送都要输入账号密码的问题
 https://blog.csdn.net/fenghuibian/article/details/73350890   添加公钥方便git使用ssh进行push pull代码
-https://jingyan.baidu.com/article/da1091fb1a46a6027849d6a8.html 解决mysql暗转之后无法启动的问题
+
 ******************************************************************************************************************************************************************************************
+https://jingyan.baidu.com/article/da1091fb1a46a6027849d6a8.html 解决mysql暗转之后无法启动的问题
 问题描述:
 	1.先安装了5.6.19的版本  在   mysqld install MySQL –defaults-file="D:\MySQL\mysql-5.6.19-winx64\my.ini"  步骤路径没输完的情况下按了enter(不确定是不是这个原因) 
 	2.重新执行该命令显示服务已存在。删除服务重新install (到事件查看其查看windows日志:Aborting)
@@ -33,7 +34,15 @@ https://jingyan.baidu.com/article/da1091fb1a46a6027849d6a8.html 解决mysql暗�
 	windows日志报错为:无法找到来自源 MySQL 的事件 ID 100 的描述。本地计算机上未安装引发此事件的组件，或者安装已损坏。可以安装或修复本地计算机上的组件...
 	7.参照上面的链接 bin下cmd执行 "mysqld  --initialize-insecure"命令
 	8.执行"net start mysql"命令服务正常启动
-	
+	9."mysql -u root -p" 不输入密码直接enter 进入数据库成功  没有出现博客中密码的问题
+	10.执行 "SET PASSWORD FOR 'root'@'localhost' = '111';"命令将密码改为111
+	11.低版本的Navcat出现1251错误 原因是5.7之后的密码加密规则改变,要么升级Navcat 要么修改加密规则  下面是修改加密规则
+	12.ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER; 		#修改加密规则 
+	   ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';   #更新一下用户的密码 
+	   FLUSH PRIVILEGES; 																	#刷新权限 
+	13.mysql -u root -p 输入密码    继续报错 :1045 - Access denied for user 'root'@'localhost'(using password:YES)
+	14. mysqld --skip-grant-tables  跳过密码验证
+	15.net stop mysql 停止服务 然后开启服务    (mysqld --skip-grant-tables命令无效)
 ******************************************************************************************************************************************************************************************
  创建java web项目
 1.github创建目录得到下载地址
