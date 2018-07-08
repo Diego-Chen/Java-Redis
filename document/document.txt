@@ -4,10 +4,9 @@ https://jingyan.baidu.com/article/9f7e7ec0b17cac6f2815548d.html  Git安装与配
 https://jingyan.baidu.com/article/48206aeaf10636216bd6b35f.html  打开计算机管理
 https://jingyan.baidu.com/article/f96699bbaa8fc1894f3c1b5a.html  删除MySql
 https://blog.csdn.net/whbing1471/article/details/52066688  解决每次推送都要输入账号密码的问题
+https://blog.csdn.net/fenghuibian/article/details/73350890   添加公钥方便git使用ssh进行push pull代码
 
-
-
-创建java web项目
+ 创建java web项目
 1.github创建目录得到下载地址
 2.右键项目文件夹"Git Bash Here"
 3.git clone https...
@@ -20,3 +19,10 @@ https://blog.csdn.net/whbing1471/article/details/52066688  解决每次推送都
 Git更换https为ssh 省得使用https时每次需要输入账号密码才能提交代码
 $ git remote rm origin
 $ git remote add origin git@github.com:Diego-Chen/Java-Redis.git
+
+
+解决git中vim打开文件无法复制黏贴的问题
+vim  ~/.vimrc 文件，加入如下代码：
+if has('mouse') 
+    set mouse-=a endif 
+wq保存退出就可以了
