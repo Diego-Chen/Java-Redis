@@ -3,9 +3,7 @@ https://jingyan.baidu.com/article/a65957f4cfcbf524e67f9b3a.html  更换JDK
 https://jingyan.baidu.com/article/9f7e7ec0b17cac6f2815548d.html  Git安装与配置
 https://jingyan.baidu.com/article/48206aeaf10636216bd6b35f.html  打开计算机管理
 https://jingyan.baidu.com/article/f96699bbaa8fc1894f3c1b5a.html  删除MySql
-
-解决每次推送都要输入账号密码的问题
-https://blog.csdn.net/whbing1471/article/details/52066688
+https://blog.csdn.net/whbing1471/article/details/52066688  解决每次推送都要输入账号密码的问题
 
 
 
@@ -18,3 +16,7 @@ https://blog.csdn.net/whbing1471/article/details/52066688
 6.git commit -m ""
 7.git push -u origin master
 删掉Myeclipse中的Redis项目重新导入 结束
+
+Git更换https为ssh
+$ git remote rm origin
+$ git remote add origin git@github.com:whbing147/learngit.git
