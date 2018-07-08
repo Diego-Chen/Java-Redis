@@ -17,6 +17,6 @@ https://blog.csdn.net/whbing1471/article/details/52066688  解决每次推送都
 7.git push -u origin master
 删掉Myeclipse中的Redis项目重新导入 结束
 
-Git更换https为ssh
+Git更换https为ssh 省得使用https时每次需要输入账号密码才能提交代码
 $ git remote rm origin
 $ git remote add origin git@github.com:whbing147/learngit.git
