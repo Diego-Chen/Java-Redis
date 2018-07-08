@@ -1,0 +1,20 @@
+https://blog.csdn.net/lupengfei1009/article/list/1    博客（Linux安装  Spring+mvc搭建 卡）
+https://jingyan.baidu.com/article/a65957f4cfcbf524e67f9b3a.html  更换JDK
+https://jingyan.baidu.com/article/9f7e7ec0b17cac6f2815548d.html  Git安装与配置
+https://jingyan.baidu.com/article/48206aeaf10636216bd6b35f.html  打开计算机管理
+https://jingyan.baidu.com/article/f96699bbaa8fc1894f3c1b5a.html  删除MySql
+
+解决每次推送都要输入账号密码的问题
+https://blog.csdn.net/whbing1471/article/details/52066688
+
+
+
+创建java web项目
+1.github创建目录得到下载地址
+2.右键项目文件夹"Git Bash Here"
+3.git clone https...
+4.在项目文件夹中生成项目文件夹，将项目文件移到项目文件夹中
+5.git add .
+6.git commit -m ""
+7.git push -u origin master
+删掉Myeclipse中的Redis项目重新导入 结束
