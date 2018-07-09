@@ -1,6 +1,8 @@
 package Main;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
@@ -14,11 +16,36 @@ public class JedisConnect {
 	static Jedis jedis;
 	
 	public static void main(String[] args) {
+//		JedisPoolConfig poocfg = new JedisPoolConfig();
+//		//最大空闲数
+//		poocfg.setMaxIdle(50);
+//		//最大连接数
+//		poocfg.setMaxTotal(100);
+//		//最大等待毫秒数
+//		poocfg.setMaxWaitMillis(20000);
+//		//使用配置创建连接池
+//		JedisPool pool = new JedisPool(poocfg,"localhost");
+//		//从连接池中获取单个连接
+//	    jedis = pool.getResource();
+		String t = null;
+		String lll = null == t ? "1" : "2";
+		System.err.println(lll+"4444444444444");
 		
-		tsac();
+		
+		Map< String, String> map = new HashMap<String, String>();
+		map.get("svrTime");
+		System.err.println("map数据:" );
+		
+//		rpush();
+//		tsac();
 //		jedisPoolTest();
 //		jedisTest();
 
+	}
+	
+	
+	public static void rpush(){
+		jedis.rpush("TEST_12345", "11111111111111111111111");
 	}
 
 
@@ -28,20 +55,6 @@ public class JedisConnect {
 		
 		try {
 			
-			if(null == jedis){
-			
-				JedisPoolConfig poocfg = new JedisPoolConfig();
-				//最大空闲数
-				poocfg.setMaxIdle(50);
-				//最大连接数
-				poocfg.setMaxTotal(100);
-				//最大等待毫秒数
-				poocfg.setMaxWaitMillis(20000);
-				//使用配置创建连接池
-				JedisPool pool = new JedisPool(poocfg,"localhost");
-				//从连接池中获取单个连接
-			    jedis = pool.getResource();
-			}
 			
 			String key1 = "t1";
 			String key2 = "t2";
