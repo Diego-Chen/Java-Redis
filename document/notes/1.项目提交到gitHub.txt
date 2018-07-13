@@ -1,0 +1,48 @@
+https://blog.csdn.net/lupengfei1009/article/list/1    博客（Linux安装  Spring+mvc搭建 卡）
+https://jingyan.baidu.com/article/a65957f4cfcbf524e67f9b3a.html  更换JDK
+https://jingyan.baidu.com/article/9f7e7ec0b17cac6f2815548d.html  Git安装与配置
+https://jingyan.baidu.com/article/48206aeaf10636216bd6b35f.html  打开计算机管理
+https://jingyan.baidu.com/article/f96699bbaa8fc1894f3c1b5a.html  删除MySql
+https://jingyan.baidu.com/article/da1091fb1a46a6027849d6a8.html 解决mysql暗转之后无法启动的问题
+https://jingyan.baidu.com/article/363872ec2e27076e4ba16fc3.html  mysql安装版安装成功
+
+
+ 创建java web项目
+1.github创建目录得到下载地址
+2.右键Test文件夹"Git Bash Here"
+3.git clone https...
+4.在项目文件夹中生成project文件夹，将本地所有项目文件移到项目文件夹中
+5.git add .
+6.git commit -m ""
+7.git push -u origin master
+8.删掉Myeclipse中的Redis项目重新导入 结束
+9.直接push报错
+	Warning: Permanently added the RSA host key for IP address '13.229.188.59' to the list of known hosts.
+	Permission denied (publickey).
+	fatal: Could not read from remote repository.
+	Please make sure you have the correct access rights
+	and the repository exists.
+
+10.Git更换https为ssh 省得使用https时每次需要输入账号密码才能提交代码  在本地生成公钥添加到github上面
+	进ssh目录
+	cd ~/.ssh
+	生成公钥
+	ssh-keygen -t rsa -C "Degio-Chen"   注意此过程中需要设置密码 直接enter就是以后提价代码不需要密码
+	ll 指令查看
+		-rw-r--r-- 1 Administrator 197121 1766 七月 13 15:13 id_rsa
+		-rw-r--r-- 1 Administrator 197121  392 七月 13 15:13 id_rsa.pub
+		-rw-r--r-- 1 Administrator 197121  802 七月 13 15:07 known_hosts
+	vim id_rsa.pub  进去复制公钥复制不了
+		vim  ~/.vimrc 文件，加入如下代码：
+			if has('mouse') 
+		    	set mouse-=a 
+		endif 
+		wq保存退出
+	vim id_rsa.pub  右键复制
+11.到gitHub添加公钥（不多说）
+12。git执行下面两条指令更换成ssh
+	$ git remote rm origin
+	$ git remote add origin git@github.com:Diego-Chen/Java-Redis.git
+完成
+
+

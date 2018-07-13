@@ -1,11 +1,9 @@
-<<<<<<< HEAD
-#Wed Jun 27 16:50:37 CST 2018
+#Fri Jul 13 15:31:46 CST 2018
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=04d73acaf29d4de6559ec5f53e84bd78612db33f
 eclipse.preferences.version=1
+encoding//document/notes/1.\u9879\u76EE\u63D0\u4EA4\u5230gitHub.txt=UTF-8
 encoding//resources/config.properties=UTF-8
 encoding//src/Utils/DateUtil.java=UTF-8
-=======
-#Sun Jul 08 15:44:42 CST 2018
-eclipse.preferences.version=1
-encoding//document/document.txt=UTF-8
 encoding/<project>=UTF-8
->>>>>>> 04d73acaf29d4de6559ec5f53e84bd78612db33f
