@@ -6,12 +6,11 @@ https://jingyan.baidu.com/article/f96699bbaa8fc1894f3c1b5a.html  删除MySql
 https://jingyan.baidu.com/article/da1091fb1a46a6027849d6a8.html 解决mysql暗转之后无法启动的问题
 https://jingyan.baidu.com/article/363872ec2e27076e4ba16fc3.html  mysql安装版安装成功
 
-
- 创建java web项目
+桌面有个名字为tem的maven项目 现需要在指点目录(d:Test/tem)下建立仓库与自己gitHub账号上的Java-Redis项目关联管理
 1.github创建目录得到下载地址
 2.右键Test文件夹"Git Bash Here"
 3.git clone https...
-4.在项目文件夹中生成project文件夹，将本地所有项目文件移到项目文件夹中
+4.在d:Test文件夹中生成tem文件夹，将桌面项目tem中的文件移到d:Test中
 5.git add .
 6.git commit -m ""
 7.git push -u origin master
@@ -44,5 +43,3 @@ https://jingyan.baidu.com/article/363872ec2e27076e4ba16fc3.html  mysql安装版�
 	$ git remote rm origin
 	$ git remote add origin git@github.com:Diego-Chen/Java-Redis.git
 完成
-
-
