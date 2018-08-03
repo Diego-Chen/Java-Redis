@@ -1,0 +1,4 @@
+1.新建web project
+2.右键项目名称->MyEclipse->Add Struts Capabilities...
+      src目录下出现struts.xml基本框架就搭建好了
+3.发布到tomcat  在浏览器请求http://192.168.1.108:8080/WEB_STRU2/
