@@ -50,7 +50,7 @@ https://jingyan.baidu.com/article/363872ec2e27076e4ba16fc3.html  mysql安装版�
 2.公钥添加到gitHub
 3.git init
 4.git clone git@github.com:...   
-
+5.commit 的时候提示设置邮箱和名字  设置
 
 测试连接
 ssh -T git@ithub.com
