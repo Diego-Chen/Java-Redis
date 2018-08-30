@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-module
   type="WEB"
-  name="WEB_REDIS"
+  name="Java-Redis"
   id="myeclipse.1529846351126"
   context-root="/Redis"
   j2ee-spec="6.0"
-  archive="WEB_REDIS.war">
+  archive="Java-Redis.war">
   <attributes>
     <attribute name="webrootdir" value="WebRoot" />
   </attributes>
