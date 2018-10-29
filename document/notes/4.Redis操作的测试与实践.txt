@@ -4,7 +4,7 @@ set key1 value1
 set key2 value2
 set key3 value3
 在redis目录下执行命令
-"cat 1.txt | redis-cli --pipe" 可疑将1.txt中的数据逐行通过redis执行默认选择0库
+"cat QR20181023.txt | redis-cli --pipe" 可疑将1.txt中的数据逐行通过redis执行默认选择0库
 
 官方在2.6版本推出了一个新的功能-pipe mode，即将支持Redis协议的文本文件直接通过pipe导入到服务端。文档地址:https://redis.io/topics/mass-insert
 一个命令接着一个命令发送 每个命令都存在往返时间
