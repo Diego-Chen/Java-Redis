@@ -43,3 +43,23 @@ https://jingyan.baidu.com/article/363872ec2e27076e4ba16fc3.html  mysql安装版�
 	$ git remote rm origin
 	$ git remote add origin git@github.com:Diego-Chen/Java-Redis.git
 完成
+
+
+二  从gitHub下载项目  通过ssh的方式
+1.创建得到公钥   不设置文件名不设置密码
+2.公钥添加到gitHub
+3.git init
+4.git clone git@github.com:...   
+5.commit 的时候提示设置邮箱和名字  设置
+
+测试连接
+ssh -T git@ithub.com
+出现 ssh: connect to host github.com port 22: Connection timed out
+解决 Host github.com
+		 User YourEmail@163.com
+		 Hostname ssh.github.com
+		 PreferredAuthentications publickey
+     IdentityFile ~/.ssh/id_rsa
+     Port 443
+cat ~/.ssh id_rsa.pub  找出公钥
+

@@ -35,3 +35,24 @@ https://blog.csdn.net/fenghuibian/article/details/73350890   添加公钥方便g
 	13.mysql -u root -p 输入密码    继续报错 :1045 - Access denied for user 'root'@'localhost'(using password:YES)
 	14. mysqld --skip-grant-tables  跳过密码验证
 	15.net stop mysql 停止服务 然后开启服务    (mysqld --skip-grant-tables命令无效)
+
+	
+	
+问题：	
+net start mysql; 服务名无效。 请键入 NET HELPMSG 2185 以获得更多的帮助
+
+
+windows+r， 打开运行，输入services.msc, 找到mysqlde服务，右键属性，发现服务器名称是MySQL57
+
+net start MySQL57 启动成功
+
+修改密码  windows 10下
+1.以系统管理员身份登陆系统。
+
+2.打开cmd-----net start 查看mysql是否启动。启动的话就停止net stop mysql.
+
+3.我的mysql安装在d:\usr\local\mysql4\bin下。
+
+4.跳过权限检查启动mysql   mysqld --skip-grant-tables
+
+5.重新打开cmd。进到d:\usr\local\mysql4\bin下：mysql admin -u root flush-privileges password "newpassword"
